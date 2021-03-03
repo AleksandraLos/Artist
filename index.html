@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div id="demo"></div>
+
+
+    <script>
+        var genrer = ["pop", "Rock", "Dansband", "Hip-hop", "House", "Jazz", "Coutry"];
+
+        const artister = [{
+            knownAs: "Avicci",
+            firstName: "Tim",
+            lastName: "Bergling",
+            comeFrom: "Sweden",
+            genre: "House",
+            instrument: "Gitarr",
+            cooperation: "Coldplay",
+            img: "0.jpg",
+            description: "Tim Bergling’s death on April 20, 2018 was a shockwave, the global mourning an equal and opposite reaction to the Swedish producer’s intensely uplifting music and the reach it had during his comet streak of a career.As Avicii, Tim Bergling brought a pop sensibility to the electronic scene and helped redefine the global EDM phenomenon. His biggest tracks -“Levels”, “Wake Me Up”, “Hey Brother” - were pristinely produced anthems of collective catharsis."
+
+        }, {
+            knownAs: "Alice Cooper",
+            firstName: "Vincent Damon",
+            lastName: "Furnier ",
+            comeFrom: "USA",
+            genre: "Rock",
+            instrument: "Gitarr",
+            cooperation: "Bon Jovi",
+            img: "1.png",
+            description: "The man (and the band) who first brought shock rock to the masses, Alice Cooper became one of the most successful and influential acts of the '70s with their gritty but anthemic hard rock and a live show that delivered a rock & roll chamber of horrors, thrilling fans and cultivating outrage from authority figures (which made fans love them all the more). The name Alice Cooper originally referred to both the band and its lead singer (born Vincent Furnier), as they played dark, eccentric, psychedelic rock on their first two albums, Pretties for You (1969) and Easy Action (1970)."
+        }, {
+            knownAs: "Michael Jackson",
+            firstName: "Michael Joshep",
+            lastName: "Jackson ",
+            comeFrom: "USA",
+            genre: "pop",
+            instrument: "sång",
+            cooperation: "Lionel Richie",
+            img: "2.jpg",
+            description: "Michael Jackson wasn't merely the biggest pop star of his era, shaping the sound and style of the '70s and '80s; he was one of the defining stars of the 20th century, a musician who changed the contours of American culture. A preternaturally gifted singer and dancer, Jackson first rose to stardom in 1969 as the 11-year-old frontman for his family's band, the Jackson 5."
+        }, {
+            knownAs: "Lasse Stefanz",
+            firstName: "Olle",
+            lastName: "Jönnson ",
+            comeFrom: "Sweden",
+            genre: "Dansband",
+            instrument: "trummor",
+            cooperation: "Lotta Engberg",
+            img: "3.jpg",
+            description: "With a career spanning five decades, Swedish dansband Lasse Stefanz play music in a country style. One of the most popular dansbands of its era, the group broke through to mainstream success in 1982 with the hit single ´Oh Julie´ and remained reliably popular in the years thereafter, releasing a new album each year and topping the Swedish charts with regularity after the turn of the century. Founded in 1967 in Kristianstad, the band comprised Olle Jönsson (vocals), Christer Ericsson (guitar), Anders Pettersson (keyboard, accordion), Lars Sigfridsson (bass), Hans Sigfridsson (guitar, saxophone), and Gunnar Nilsson (drums)."
+
+        }, {
+            knownAs: "50 cent",
+            firstName: "Curtis James",
+            lastName: "Jackson",
+            comeFrom: "USA",
+            genre: "Hip-Hop",
+            instrument: "sång",
+            cooperation: "Eminem",
+            img: "4.jpg",
+            description: "Though he would later struggle with the nature of his fame as well as market expectations, 50 Cent endured substantial obstacles throughout his young yet remarkably dramatic life before becoming the most discussed figure in rap, if not pop music in general, circa 2003. Following an unsuccessful late-'90s run at mainstream success (foiled by an attempt on his life in 2000) and a successful run on the New York mixtape circuit (driven by his early-2000s bout with Ja Rule), Eminem signed 50 Cent to a seven-figure contract in 2002 and helmed his quick rise toward crossover success in 2003. The product of a broken home in the rough Jamaica neighborhood of Queens and, in turn, the storied hood's hustling streets themselves, 50 Cent lived everything most rappers write rhymes about but not all actually experience: drugs, crimes, imprisonments, stabbings, and most infamously of all, shootings. Of course, such experiences became 50 Cent's rhetorical stock-in-trade. He reveled in his oft-told past, he called out wannabe gangstas, and he made headlines. He even looked like the ideal East Coast hardcore rapper: big-framed with oft-showcased biceps, abs, and tattoos as well as his trademark bulletproof vest, pistol, and iced crucifix. But all-importantly, 50 Cent may have fit the mold of a prototypical hardcore rapper, but he could also craft a catchy hook. As a result, his music crossed over to the pop market, appealing to both those who liked his roughneck posturing and rags-to-riches story as well as those who liked his knack for churning out naughty singalong club tracks. And too, 50 Cent didn't forget about his posse. He helped his G-Unit crew grow into a successful franchise, spawning platinum-selling solo albums for his group members, lucrative licensing deals for the brand name, and sell-out arena tours to promote the franchise internationally. By the time of his third album (Curtis, 2007), however, 50 Cent faced a formidable backlash, particularly among hip-hop purists, who were displeased by his turn toward crossover pop-rap and thus away from street-level credibility."
+        }, {
+            knownAs: "Louis Armstrong",
+            firstName: "Louis",
+            lastName: "Armstrong",
+            comeFrom: "USA",
+            genre: "Jazz",
+            instrument: "trumpet",
+            cooperation: "Ella Fitzgerald",
+            img: "5.jpg",
+            description: "A jazz pioneer, Louis Armstrong was the first important soloist to emerge in jazz, and he became the most influential musician in the music's history. As a trumpet virtuoso, his playing, beginning with the 1920s studio recordings he made with his Hot Five and Hot Seven ensembles, charted a future for jazz in highly imaginative, emotionally charged improvisation. For this, he is revered by jazz fans. But Armstrong also became an enduring figure in popular music due to his distinctively phrased baritone singing and engaging personality, which were on display in a series of vocal recordings and film roles. He weathered the bebop period of the '40s, growing ever more beloved worldwide. By the '50s, Armstrong was widely recognized, even traveling the globe for the US. .State Department and earning the nickname `Ambassador Satch.` His resurgence in the '60s with hit recordings like 1965's Grammy-winning ´Hello Dolly´ and 1968's classic ´What a Wonderful World´ solidified his legacy as a musical and cultural icon. In 1972, a year after his death, he received a Grammy Lifetime Achievement Award. Similarly, many of his most influential recordings, like 1928's ´West End Blues´ and 1955's ´Mack the Knife,´ have been inducted into the Grammy Hall of Fame."
+        }, {
+            knownAs: "Dolly Parton",
+            firstName: "Dolly Rebecca",
+            lastName: "Parton",
+            comeFrom: "USA",
+            genre: "Coutry",
+            instrument: "gitarr",
+            cooperation: "Miley Cyrus",
+            img: "6.jpg",
+            description: "It's difficult to find a country performer who has moved from her country roots to international fame more successfully than Dolly Parton. During the mid-'70s, she established herself as a country superstar, and crossed over into the pop mainstream in the early '80s when she smoothed out the rough edges in her music and began singing pop as well as country. At the same time, she also began appearing in movies, most notably the hit 9 to 5. Though her savvy marketing, image manipulation (her dumb blonde stage persona is an act), extracurricular forays into film, and flirtations with country-pop have occasionally overshadowed her music, at her core Parton is a country gal and a tremendously gifted singer/songwriter."
+        }, {
+            knownAs: "Whitney Houston",
+            firstName: "Whitney Elizabeth",
+            lastName: "Houston",
+            comeFrom: "USA",
+            genre: "pop",
+            instrument: "sång",
+            cooperation: "George Michael",
+            img: "7.jpg",
+            description: "Whitney Houston was inarguably one of the biggest female pop stars of all time. Her accomplishments as a hitmaker were extraordinary; just to scratch the surface, she became the first artist ever to have seven consecutive singles hit number one, and her 1993 Dolly Parton cover `I Will Always Love You` became nothing less than the biggest hit single in rock history. Houston was able to handle big adult contemporary ballads, effervescent, stylish dance-pop, and slick urban contemporary soul with equal dexterity; the result was an across-the-board appeal that was matched by scant few artists of her era, and helped her become one of the first black artists to find success on MTV in Michael Jackson's wake. "
+        }, {
+            knownAs: "Freddie Mercury",
+            firstName: "Farrokh ",
+            lastName: "Bulsara",
+            comeFrom: "Zanzibar",
+            genre: "Rock",
+            instrument: "piano",
+            cooperation: "Michael Jackson",
+            img: "8.jpg",
+            description: "Combining an outrageously flamboyant stage persona with an immense talent for writing catchy and complex songs -- in addition to possessing one of the greatest voices in modern music -- vocalist Freddie Mercury remains one of rock’s all-time greatest entertainers."
+        }, {
+            knownAs: "Celine Dion",
+            firstName: "Céline Marie Claudette",
+            lastName: "Dion",
+            comeFrom: "Kanada   ",
+            genre: "pop",
+            instrument: "piano",
+            cooperation: " ",
+            img: "9.jpg",
+            description: "From her humble roots as a French-language teenage pop singer to international superstardom, Canadian singer Celine Dion became a multi-platinum, Grammy-winning crossover success in the '90s after breaking into the English-language market with heartfelt ballads that shined a spotlight on her powerful and inimitable voice."
+        }, {
+            knownAs: "Sam Cooke",
+            firstName: "Samuel",
+            lastName: "Cooke",
+            comeFrom: "USA",
+            genre: "jazz",
+            instrument: "piano",
+            cooperation: "Bobby Womack",
+            img: "10.jpg",
+            description: "Sam Cooke was the most important soul singer in history, its primary inventor, and its most popular and beloved performer in both the black and white communities. Equally important, he was among the first black performers and composers to attend to the business side of the music business, founding both a record label and a publishing company as an extension of his careers as a singer and composer. Still, business interests never prevented him from engaging in topical issues, including the struggle over civil rights. The pitch and intensity of that battle followed an arc which paralleled Cooke's emergence as a star; his career bridged gaps between black and white audiences that few had tried to surmount, much less succeeded at doing."
+        }, {
+            knownAs: "Elvis Presley",
+            firstName: "Elvis Aaron",
+            lastName: "Presley",
+            comeFrom: "USA",
+            genre: "Coutry",
+            instrument: "gitarr",
+            cooperation: "Bobby Womack",
+            img: "11.jpg",
+            description: "Elvis Presley may be the single most important figure in 20th-century popular music. Not necessarily the best, and certainly not the most consistent, but no one could argue with the fact that he was the musician most responsible for popularizing rock & roll on an international level. Viewed in cold sales figures, his impact was phenomenal. Dozens upon dozens of international smashes from the mid-'50s to the mid-'70s, as well as the steady sales of his catalog and reissues since his death in 1977, make him one of the highest-selling performers in history. More important from a music lover's perspective, however, are his remarkable artistic achievements. Elvis' recordings during the '50s established the basic language of rock & roll, his explosive and sexual stage presence set standards for the music's visual image, and his vocals were incredibly powerful and versatile. Unfortunately, to much of the public, Elvis is more icon than artist. Innumerable bad Hollywood movies, increasingly caricatured records and mannerisms, and a personal life that became sheltered from real-world concerns gave his story a mythic status. By the time of his death, he'd become a symbol of gross Americana rather than cultural innovation. The continued speculation about his incredible career has sustained interest in his life and supported a large tourist/entertainment industry that may last indefinitely, even if the fascination is fueled more by his celebrity than his music."
+        }];
+        // document.getElementById("demo").innerHTML += artister[3].firstName + artister[2].firstName;
+
+        artister.forEach(function(artister) {
+
+            document.getElementById("demo").innerHTML += "<div class=img><img class='image' src='" + artister.img + "'></div>";
+            document.getElementById("demo").innerHTML += "<h1>" + artister.knownAs + "</h1>"
+            document.getElementById("demo").innerHTML += "<h2>" + "(" + artister.firstName + " " + artister.lastName + ")" + "</h2>";
+            document.getElementById("demo").innerHTML += "<h3>" + "Genre:" + artister.genre + "</h3>" + "<h4>" + "Instrument:" + artister.instrument + "</h4>";
+            document.getElementById("demo").innerHTML += "<h3>" + artister.description + "</h3>" + "<hr>";
+
+
+        })
+
+        //  artister.forEach(function(artister) {})
+    </script>
+</body>
+
+</html>
